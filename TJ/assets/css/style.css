@@ -1,5 +1,6 @@
 html {
     text-align: center;
+    height: 90%;
 }
 
 head {
@@ -7,16 +8,25 @@ head {
     text-align: center;
 }
 
+body {
+    background-color: #242423;
+}
+
 #master {
     text-align: center;
     display: inline-block;
+    margin-top: 60px;
+    background-color: #F5CB5C;
 }
 
 #secondary {
     background-color: black;
     display: inline-block;
     text-align: center;
-    margin: 35px;
+    margin: 50px;
+    height: 500px;
+    max-width: 400px;
+    min-width: 300px;
 }
 
 @media (max-width: 690px) {
