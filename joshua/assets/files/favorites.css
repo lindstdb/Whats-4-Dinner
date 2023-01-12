@@ -35,5 +35,27 @@
   ul {
     list-style: none;
   }
-
   
+  body{
+    background-color: #242423;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+#favorites-container{
+  border:5px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 10rem;
+}
+  
+#favorites-header{
+    border: 5px solid black ;
+}
+
+.favorites-deco{
+
+}
