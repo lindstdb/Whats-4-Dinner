@@ -9,15 +9,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
-    <div id="master" class="card" style="width: 80%;">
-        <div id="secondary" class="card" style="width: 40%;">
+    <div id="master" class="card-container" style="width: 80%;">
+        <div id="foodRecipe" class="card" style="width: 40%;">
             <div class="card-section">
                 <button type="button" id="btn" class="submit success button">Placeholder</button>
+                <fieldset class="large-7 cell heart">
+                    <input id="heart" type="checkbox">
+                    <label for="heart">❤</label>
+                  </fieldset>
             </div>
         </div>
-        <div id="secondary" class="card" style="width: 40%;">
+        <div id="drinkRecipe" class="card" style="width: 40%;">
             <div class="card-section">
                 <button type="button" id="btn" class="submit success button">Placeholder</button>
+                <fieldset class="large-7 cell heart2">
+                    <input id="heart2" type="checkbox">
+                    <label for="heart2">❤</label>
+                  </fieldset>
             </div>
         </div>
         <div class="card-section">
@@ -30,6 +38,17 @@
 </head>
 
 <body>
+    <!-- <div class="parent">
+        <div class="child">
+            <input type="checkbox" checked="checked"
+            id="favorite" name="favorite-checkbox"
+            value="favorite-button">
+            <label for="favorite" class="container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none"></svg>
+            </label>
+        </div>
+    </div>
+ -->
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
