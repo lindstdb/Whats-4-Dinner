@@ -20,6 +20,7 @@ body {
     box-shadow: 0px 20px 30px 0px black;
     border-radius: 80px;
     border-width: 1px;
+    min-width: 400px;
 }
 
 .card {
@@ -30,10 +31,28 @@ body {
     height: 500px;
     max-width: 400px;
     min-width: 300px;
-    box-shadow: 0px 20px 30px 0px #333533;
+    box-shadow: 10px 10px 10px rgba(58, 58, 57, 0.521);
     border-radius: 40px;
     border-width: 1px;
     position: relative;
+    width: 40%;
+}
+
+.expandCard {
+  background-color: #E8EDDF;
+  display: inline-block;
+  text-align: center;
+  margin: 50px;
+  height: 500px;
+  box-shadow: 10px 10px 10px rgba(58, 58, 57, 0.521);
+  border-radius: 40px;
+  border-width: 1px;
+  position: relative;
+  width: 80%;
+}
+
+.hide {
+  display: none;
 }
 
 #btn {
@@ -61,39 +80,81 @@ body {
     right: -150px;
 }
 
-  .heart label {
+.heart label {
     color: #aab8c2;
     cursor: hand;
     font-size: 30px;
   }
 
-  .heart input {
+.heart input {
     position: absolute;
     left: -100vw;
   }
       
-  #heart:checked + label {
+#heart:checked + label {
     color: #e2264d;
   }
 
-  .heart2 {
+.heart2 {
     position: absolute;
     top: 15px;
     right: -150px;
 }
 
-  .heart2 label {
+.heart2 label {
     color: #aab8c2;
     cursor: hand;
     font-size: 30px;
   }
 
-  .heart2 input {
+.heart2 input {
     position: absolute;
     left: -100vw;
   }
       
-  #heart2:checked + label {
+#heart2:checked + label {
+    color: #e2264d;
+  }
+
+.expand {
+    position: absolute;
+    top: 18px;
+    left: -150px;
+}
+
+.expand label {
+    color: #aab8c2;
+    cursor: hand;
+    font-size: 25px;
+  }
+
+.expand input {
+    position: absolute;
+    left: -100vw;
+  }
+      
+#expand:checked + label {
+    color: #e2264d;
+  }
+
+.expand2 {
+    position: absolute;
+    top: 18px;
+    left: -150px;
+}
+
+.expand2 label {
+    color: #aab8c2;
+    cursor: hand;
+    font-size: 25px;
+  }
+
+.expand2 input {
+    position: absolute;
+    left: -100vw;
+  }
+      
+#expand2:checked + label {
     color: #e2264d;
   }
 
@@ -105,7 +166,7 @@ body {
     }
   }
   
-  @media (max-width: 500px) {
+@media (max-width: 500px) {
     .btn {
       font-size: 1rem;
     }
