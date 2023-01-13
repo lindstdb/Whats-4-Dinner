@@ -1,0 +1,173 @@
+html {
+    text-align: center;
+    height: 90%;
+}
+
+head {
+    display: inline-block;
+    text-align: center;
+}
+
+body {
+    background-color: #242423;
+}
+
+#master {
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #F5CB5C;
+    box-shadow: 0px 20px 30px 0px black;
+    border-radius: 80px;
+    border-width: 1px;
+    min-width: 400px;
+}
+
+.card {
+    background-color: #E8EDDF;
+    display: inline-block;
+    text-align: center;
+    margin: 50px;
+    height: 500px;
+    max-width: 400px;
+    min-width: 300px;
+    box-shadow: 10px 10px 10px rgba(58, 58, 57, 0.521);
+    border-radius: 40px;
+    border-width: 1px;
+    position: relative;
+    width: 40%;
+}
+
+.expandCard {
+  background-color: #E8EDDF;
+  display: inline-block;
+  text-align: center;
+  margin: 50px;
+  height: 500px;
+  box-shadow: 10px 10px 10px rgba(58, 58, 57, 0.521);
+  border-radius: 40px;
+  border-width: 1px;
+  position: relative;
+  width: 80%;
+}
+
+.hide {
+  display: none;
+}
+
+#btn {
+    background-color: #333533;
+    color: #E8EDDF;
+    border-radius: 90px;
+    border-width: 1px;
+}
+
+#btn-main {
+    background-color: #333533;
+    color: #E8EDDF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 90px;
+    border-width: 1px;
+    width: 40%;
+    margin-bottom: 25px;
+}
+
+.heart {
+    position: absolute;
+    top: 15px;
+    right: -150px;
+}
+
+.heart label {
+    color: #aab8c2;
+    cursor: hand;
+    font-size: 30px;
+  }
+
+.heart input {
+    position: absolute;
+    left: -100vw;
+  }
+      
+#heart:checked + label {
+    color: #e2264d;
+  }
+
+.heart2 {
+    position: absolute;
+    top: 15px;
+    right: -150px;
+}
+
+.heart2 label {
+    color: #aab8c2;
+    cursor: hand;
+    font-size: 30px;
+  }
+
+.heart2 input {
+    position: absolute;
+    left: -100vw;
+  }
+      
+#heart2:checked + label {
+    color: #e2264d;
+  }
+
+.expand {
+    position: absolute;
+    top: 18px;
+    left: -150px;
+}
+
+.expand label {
+    color: #aab8c2;
+    cursor: hand;
+    font-size: 25px;
+  }
+
+.expand input {
+    position: absolute;
+    left: -100vw;
+  }
+      
+#expand:checked + label {
+    color: #e2264d;
+  }
+
+.expand2 {
+    position: absolute;
+    top: 18px;
+    left: -150px;
+}
+
+.expand2 label {
+    color: #aab8c2;
+    cursor: hand;
+    font-size: 25px;
+  }
+
+.expand2 input {
+    position: absolute;
+    left: -100vw;
+  }
+      
+#expand2:checked + label {
+    color: #e2264d;
+  }
+
+@media (max-width: 690px) {
+    .btn {
+      font-size: 1rem;
+      margin: 15px 0px 0px 0px;
+      padding: 10px 15px;
+    }
+  }
+  
+@media (max-width: 500px) {
+    .btn {
+      font-size: 1rem;
+    }
+  }

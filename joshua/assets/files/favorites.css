@@ -18,6 +18,13 @@
     align-items: center;
 
   }
+  
+  body{
+    background-color: #242423;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   section{
     display: flex;
