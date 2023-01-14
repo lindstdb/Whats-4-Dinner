@@ -1,3 +1,24 @@
+window.onload = function() {
+    const recipeTitle = sessionStorage.getItem("recipeTitle");
+    const recipeImage = sessionStorage.getItem("recipeImage");
+    const recipeSourceURL = sessionStorage.getItem("recipeSourceURL")
+    const wineName = sessionStorage.getItem("wineName");
+    const wineImage = sessionStorage.getItem("wineImage");
+  
+    const recipeDiv = document.getElementById("foodRecipe");
+    recipeDiv.innerHTML = `
+      <h2>${recipeTitle}</h2>
+      <a href="${recipeSourceURL}">  
+      <img src="${recipeImage}" alt="${recipeTitle}">
+    `;
+    const drinkDiv = document.getElementById("drinkRecipe");
+    drinkDiv.innerHTML = `
+      <h2>${wineName}</h2>
+      <img src="${wineImage}" alt="${wineName}">
+    `;
+}
+  
+
 function expandCard() {
     var checkbox = document.getElementById('expand');
     var a = document.getElementById('foodRecipe');
