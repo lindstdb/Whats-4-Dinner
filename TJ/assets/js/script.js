@@ -12,8 +12,6 @@ window.addEventListener("load", function(){
     });
 });
 
-
-
 // Get the recipe data from local storage
 var recipeTitle = localStorage.getItem("recipeTitle");
 var recipeImage = localStorage.getItem("recipeImage");
