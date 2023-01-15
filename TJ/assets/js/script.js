@@ -1,23 +1,27 @@
-window.onload = function() {
-    const recipeTitle = sessionStorage.getItem("recipeTitle");
-    const recipeImage = sessionStorage.getItem("recipeImage");
-    const recipeSourceURL = sessionStorage.getItem("recipeSourceURL")
-    const wineName = sessionStorage.getItem("wineName");
-    const wineImage = sessionStorage.getItem("wineImage");
-  
-    const recipeDiv = document.getElementById("foodRecipe");
-    recipeDiv.innerHTML = `
-      <h2>${recipeTitle}</h2>
-      <a href="${recipeSourceURL}">  
-      <img src="${recipeImage}" alt="${recipeTitle}">
-    `;
-    const drinkDiv = document.getElementById("drinkRecipe");
-    drinkDiv.innerHTML = `
-      <h2>${wineName}</h2>
-      <img src="${wineImage}" alt="${wineName}">
-    `;
-}
-  
+window.addEventListener("load", function(){
+    fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php")
+    .then(response => response.json())
+    .then(data => {
+        // Extract the cocktail data
+        var cocktail = data.drinks[0];
+        var cocktailName = cocktail.strDrink;
+        var cocktailImage = cocktail.strDrinkThumb;
+        var cocktailUrl = "https://www.thecocktaildb.com/drink.php?c=" + cocktail.idDrink;
+        // Populate the drinkRecipe div with the cocktail data
+        $("#drinkRecipe").html("<h2>" + cocktailName + "</h2><img src='" + cocktailImage + "'><a href='" + cocktailUrl + "'>Go To Recipe</a>");
+    });
+});
+
+
+
+// Get the recipe data from local storage
+var recipeTitle = localStorage.getItem("recipeTitle");
+var recipeImage = localStorage.getItem("recipeImage");
+var recipeSourceUrl = localStorage.getItem("recipeSourceUrl");
+
+// Populate the foodRecipe div with the recipe data
+document.getElementById("foodRecipe").innerHTML = "<h2>" + recipeTitle + "</h2><img src='" + recipeImage + "'><a href='" + recipeSourceUrl + "'>Go To Recipe</a>";
+
 
 function expandCard() {
     var checkbox = document.getElementById('expand');
