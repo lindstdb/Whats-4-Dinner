@@ -14,6 +14,7 @@ body {
 
 h4 {
   margin-top: 30px;
+  position: relative;
 }
 
 #master {
@@ -124,7 +125,7 @@ h4 {
     color: #e2264d;
   }
 
-.expand {
+/* .expand {
     position: absolute;
     top: 18px;
     left: -150px;
@@ -164,7 +165,7 @@ h4 {
       
 #expand2:checked + label {
     color: #e2264d;
-  }
+  } */
 
 @media (max-width: 690px) {
     .btn {
