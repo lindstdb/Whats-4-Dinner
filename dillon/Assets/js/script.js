@@ -9,7 +9,7 @@ document.getElementById("generate").addEventListener("click", function(){
         localStorage.setItem("recipeImage", recipe.image);
         localStorage.setItem("recipeSourceUrl", recipe.sourceUrl);
         // Redirect to TJindex.html
-        window.location.href = "file:///C:/Users/linds/bootcamp/Project-1/TJindex.html";
+        window.location.href = "TJindex.html";
     });
 });
 
