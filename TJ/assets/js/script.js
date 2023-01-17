@@ -8,7 +8,7 @@ window.addEventListener("load", function(){
         var cocktailImage = cocktail.strDrinkThumb;
         var cocktailUrl = "https://www.thecocktaildb.com/drink.php?c=" + cocktail.idDrink;
         // Populate the drinkRecipe div with the cocktail data
-        document.getElementById("card-populate2").innerHTML = "<h4>" + recipeTitle + "</h4><img src='" + recipeImage + "'><a href='" + recipeSourceUrl + "'>Go To Recipe</a>";
+        $("#drinkRecipe").html("<h4>" + cocktailName + "</h4><img src='" + cocktailImage + "'><a href='" + cocktailUrl + "'>Go To Recipe</a>");
     });
 });
 
