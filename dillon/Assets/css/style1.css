@@ -1,0 +1,126 @@
+html{
+    text-align: center;
+    height: 90%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    background-color: #242423;
+}
+
+span{
+	margin: 0 15px;
+	line-height: .7;
+	text-shadow: 0 0 2px rgba(0, 0, 0, .45);
+	animation: span 3s ease-in infinite alternate;
+    color:#242423;
+    text-shadow: 2px 2px 4px #E8EDDF, 0 0 1em #F5CB5C, 0 0 0.2em #F5CB5C;
+    font-weight: 800;
+
+}
+.card-divder{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  
+  	
+	@media(max-width: 500px){ transform: scale(.005); font-size: 1rem;
+        margin: 15px 0px 0px 0px;
+        padding: 10px 15px; }
+}
+.letter{
+	display: inline-block;
+	height: 32px;
+	width: 27px;
+	border: 4px solid #242423;
+	border-radius: 14px;
+	box-shadow: 2px 2px 4px #E8EDDF, 0 0 1em #F5CB5C, 0 0 0.2em #F5CB5C;
+
+	animation: letter 3s ease-in-out infinite alternate;
+}
+@keyframes span { 
+	0%,30%{ margin: 0 15px; }
+	70%,100%{ margin: 0 5px; }
+}
+@keyframes letter {
+	0%,30%{ width: 27px; }
+	70%,100%{ width: 30vw; }
+}
+
+#generate{
+    width: 100%;
+   height: 80px;
+   margin-top: 10px;
+   
+}
+
+.button{
+    background-color: #333533;
+    color:#E8EDDF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    border-width: 1px;
+    margin-bottom: 25px;
+    border-radius: 90px;
+    width: 50%;
+    box-shadow: 10px 10px 10px rgba(58, 58, 57, 0.521);
+    
+    
+}
+
+#favs {
+    width: 150px;
+    margin-top: 30px;
+    background-color: #E8EDDF;
+    color: #242423;
+}
+
+h1 {
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #242423;
+    font-size: 60PX;
+    background-color: #E8EDDF;
+    font-style: oblique;
+}
+
+
+#everything {
+    height: 600px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 150px;
+    background-color: #F5CB5C;
+    box-shadow: 0px 20px 30 0px black;
+    border-radius: 80px;
+    border:1px #333533 solid;
+    min-width: 400px;
+
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: #242423;
+    padding-bottom: 20px;
+    margin-top: -75px;
+    
+}
+
+@media (max-width: 690px) {
+    .button {
+      font-size: 1rem;
+      margin: 15px 0px 0px 0px;
+      padding: 10px 15px;
+    }
+  }
+  
+@media (max-width: 500px) {
+    .button {
+      font-size: 1rem;
+      padding: 10px 15px;
+    }
+  }
