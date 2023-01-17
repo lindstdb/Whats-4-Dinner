@@ -57,11 +57,3 @@ document.getElementById("vegan").addEventListener("click", function(){
         window.location.href = "TJindex.html";
     });
 });
-
-
-
-
-
-
-
-
