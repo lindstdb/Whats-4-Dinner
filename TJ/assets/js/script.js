@@ -8,7 +8,7 @@ window.addEventListener("load", function(){
         var cocktailImage = cocktail.strDrinkThumb;
         var cocktailUrl = "https://www.thecocktaildb.com/drink.php?c=" + cocktail.idDrink;
         // Populate the drinkRecipe div with the cocktail data
-        $("#drinkRecipe").html("<h2>" + cocktailName + "</h2><img src='" + cocktailImage + "'><a href='" + cocktailUrl + "'>Go To Recipe</a>");
+        $("#drinkRecipe").html("<h4>" + cocktailName + "</h4><img src='" + cocktailImage + "'><a href='" + cocktailUrl + "'>Go To Recipe</a>");
     });
 });
 
@@ -18,7 +18,7 @@ var recipeImage = localStorage.getItem("recipeImage");
 var recipeSourceUrl = localStorage.getItem("recipeSourceUrl");
 
 // Populate the foodRecipe div with the recipe data
-document.getElementById("foodRecipe").innerHTML = "<h2>" + recipeTitle + "</h2><img src='" + recipeImage + "'><a href='" + recipeSourceUrl + "'>Go To Recipe</a>";
+document.getElementById("foodRecipe").innerHTML = "<h4>" + recipeTitle + "</h4><img src='" + recipeImage + "'><a href='" + recipeSourceUrl + "'>Go To Recipe</a>";
 
 
 function expandCard() {
