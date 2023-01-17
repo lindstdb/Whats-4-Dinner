@@ -25,7 +25,7 @@ h4 {
     box-shadow: 0px 20px 30px 0px black;
     border-radius: 80px;
     border-width: 1px;
-    min-width: 400px;
+    min-width: 500px;
 }
 
 .card {
@@ -176,6 +176,7 @@ h4 {
   }
   
 @media (max-width: 500px) {
+
     .btn {
       font-size: 1rem;
     }

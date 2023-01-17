@@ -63,3 +63,14 @@ function favoriteItem2() {
         console.log('also success');
     }
 };
+
+// Get the 'heart' element and add a click event listener
+const heart = document.getElementById("heart");
+heart.addEventListener("click", function() {
+    // Get the recipe source URL and title from the 'foodRecipe' div
+    const recipeSource = localStorage.getItem("recipeSourceUrl");
+    const recipeTitle = localStorage.getItem("recipeTitle");
+    // Save the recipe source URL and title to Local Storage
+    localStorage.setItem("recipeSource", recipeSource);
+    localStorage.setItem("recipeTitle", recipeTitle);
+});
