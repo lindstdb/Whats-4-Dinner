@@ -1,3 +1,25 @@
+window.addEventListener("load", function(){
+    fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php")
+    .then(response => response.json())
+    .then(data => {
+        // Extract the cocktail data
+        var cocktail = data.drinks[0];
+        var cocktailName = cocktail.strDrink;
+        var cocktailImage = cocktail.strDrinkThumb;
+        var cocktailUrl = "https://www.thecocktaildb.com/drink.php?c=" + cocktail.idDrink;
+        // Populate the drinkRecipe div with the cocktail data
+        document.getElementById("card-populate2").innerHTML = "<h4>" + recipeTitle + "</h4><img src='" + recipeImage + "'><a href='" + recipeSourceUrl + "'>Go To Recipe</a>";
+    });
+});
+
+// Get the recipe data from local storage
+var recipeTitle = localStorage.getItem("recipeTitle");
+var recipeImage = localStorage.getItem("recipeImage");
+var recipeSourceUrl = localStorage.getItem("recipeSourceUrl");
+
+// Populate the foodRecipe div with the recipe data
+document.getElementById("card-populate").innerHTML = "<h4>" + recipeTitle + "</h4><img src='" + recipeImage + "'><a href='" + recipeSourceUrl + "'>Go To Recipe</a>";
+
 function expandCard() {
     var checkbox = document.getElementById('expand');
     var a = document.getElementById('foodRecipe');
