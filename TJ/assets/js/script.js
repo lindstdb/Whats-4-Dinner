@@ -18,7 +18,7 @@ var recipeImage = localStorage.getItem("recipeImage");
 var recipeSourceUrl = localStorage.getItem("recipeSourceUrl");
 
 // Populate the foodRecipe div with the recipe data
-document.getElementById("card-populate").innerHTML = "<h4>" + recipeTitle + "</h4><img src='" + recipeImage + "'><a href='" + recipeSourceUrl + "'>Go To Recipe</a>";
+document.getElementById("card-populate1").innerHTML = "<h4>" + recipeTitle + "</h4><img src='" + recipeImage + "'><a href='" + recipeSourceUrl + "'>Go To Recipe</a>";
 
 // function expandCard() {
 //     var checkbox = document.getElementById('expand');
