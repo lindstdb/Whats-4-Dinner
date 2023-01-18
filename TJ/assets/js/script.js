@@ -77,7 +77,8 @@ function favoriteItem2() {
     if (favorite2.checked == true) {
         var cocktailName = document.getElementById("card-populate2");
         var cocktailUrl = document.getElementById("a href");
-        localStorage.setItem("drinkName", JSON.stringify(cocktailName));
+        // localStorage.setItem("drinkName", JSON.stringify(cocktailName));
+        localStorage.setItem("drinkName", cocktailName);
         localStorage.setItem("drinkUrl", JSON.stringify(cocktailUrl));
         console.log('success');
     } else if (favorite2.checked == !true) {
