@@ -57,25 +57,3 @@ document.getElementById("vegan").addEventListener("click", function(){
         window.location.href = "TJindex.html";
     });
 });
-
-$("#btn-main").on("click", function(){
-    $.ajax({
-        url: "https://www.thecocktaildb.com/api/json/v1/1/random.php",
-        method: "GET",
-        success: function(data) {
-            var drink = data.drinks[0];
-            var drinkName = drink.strDrink;
-            var drinkImg = drink.strDrinkThumb;
-            var drinkUrl = drink.strSource;
-            // Populate the drinkRecipe div with the drink data
-            $("#drinkRecipe").html("<h2>" + drinkName + "</h2><img src='" + drinkImg + "'><a href='" + drinkUrl + "'>Recipe</a>");
-        }
-    });
-});
-
-
-
-
-
-
-

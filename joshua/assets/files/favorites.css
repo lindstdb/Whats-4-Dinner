@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
   }
   html {
     height: 90%;
@@ -49,6 +50,7 @@
     border-radius: 40px;
     box-shadow: 10px 10px 10px rgba(58, 58, 57, 0.521);
     font-weight: bold;
+    font-style: italic;
   }
 
    /* NAV TOOLS W/HOVERS*/
