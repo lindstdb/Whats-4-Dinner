@@ -53,6 +53,7 @@ function favoriteItem2() {
     }
 };
 
+// Creates an expand function for recipe slots, commented out for future use
 // function expandCard() {
 //     var checkbox = document.getElementById('expand');
 //     var a = document.getElementById('foodRecipe');
