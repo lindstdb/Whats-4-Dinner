@@ -21,35 +21,37 @@ window.addEventListener("load", function(){
    
 });
 
-function favoriteItem() {
-    var favorite = document.getElementById('heart');
-    if (favorite.checked == true) {
-        var recipe = document.querySelector("h4.recipe");
-        var recipeUrl = document.querySelector("a.recipeUrl");
-        localStorage.setItem("recipeName", recipe.textContent);
-        localStorage.setItem("recipeUrl", recipeUrl.href);
-        console.log('success');
-    } else if (favorite.checked == !true) {
-        localStorage.removeItem("recipeName");
-        localStorage.removeItem("recipeUrl");
-        console.log('also success');
-    }
-};
+// Code to favorite recipe using heart button and save to local storage.
 
-function favoriteItem2() {
-    var favorite2 = document.getElementById('heart2');
-    if (favorite2.checked == true) {
-        var cocktailName = document.querySelector("h4.drinkName");
-        var cocktailUrl = document.querySelector("a.drinkUrl");
-        localStorage.setItem("drinkName", cocktailName.textContent);
-        localStorage.setItem("drinkUrl", cocktailUrl.href);
-        console.log('success');
-    } else if (favorite2.checked == !true) {
-        localStorage.removeItem("drinkName");
-        localStorage.removeItem("drinkUrl");
-        console.log('also success');
-    }
-};
+// function favoriteItem() {
+//     var favorite = document.getElementById('heart');
+//     if (favorite.checked == true) {
+//         var recipe = document.querySelector("h4.recipe");
+//         var recipeUrl = document.querySelector("a.recipeUrl");
+//         localStorage.setItem("recipeName", recipe.textContent);
+//         localStorage.setItem("recipeUrl", recipeUrl.href);
+//         console.log('success');
+//     } else if (favorite.checked == !true) {
+//         localStorage.removeItem("recipeName");
+//         localStorage.removeItem("recipeUrl");
+//         console.log('also success');
+//     }
+// };
+
+// function favoriteItem2() {
+//     var favorite2 = document.getElementById('heart2');
+//     if (favorite2.checked == true) {
+//         var cocktailName = document.querySelector("h4.drinkName");
+//         var cocktailUrl = document.querySelector("a.drinkUrl");
+//         localStorage.setItem("drinkName", cocktailName.textContent);
+//         localStorage.setItem("drinkUrl", cocktailUrl.href);
+//         console.log('success');
+//     } else if (favorite2.checked == !true) {
+//         localStorage.removeItem("drinkName");
+//         localStorage.removeItem("drinkUrl");
+//         console.log('also success');
+//     }
+// };
 
 // Creates an expand function for recipe slots, commented out for future use
 // function expandCard() {
