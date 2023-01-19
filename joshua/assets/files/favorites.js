@@ -1,3 +1,4 @@
+// Favorites page js file saved for future updates
 // function forEachKey(callback) {
 //   for (let i=0; i< localStorage.length; i++) {
 //     callback(localStorage.key(i));

@@ -6,6 +6,7 @@ var recipeSourceUrl = localStorage.getItem("recipeSourceUrl");
 // Populate the foodRecipe div with the recipe data
 document.getElementById("card-populate1").innerHTML = "<h4 class='recipe'>" + recipeTitle + "</h4><img src='" + recipeImage + "'><a class='recipeUrl' href='" + recipeSourceUrl + "'>Go To Recipe</a>";
 
+// Calls cocktailDB API on page load
 window.addEventListener("load", function(){
     fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php")
     .then(response => response.json())
@@ -21,8 +22,7 @@ window.addEventListener("load", function(){
    
 });
 
-// Code to favorite recipe using heart button and save to local storage.
-
+// Code to favorite recipe using heart button and save to local storage. Commented out for future use.
 // function favoriteItem() {
 //     var favorite = document.getElementById('heart');
 //     if (favorite.checked == true) {
@@ -53,7 +53,7 @@ window.addEventListener("load", function(){
 //     }
 // };
 
-// Creates an expand function for recipe slots, commented out for future use
+// Creates an expand function for recipe slots, commented out for future use.
 // function expandCard() {
 //     var checkbox = document.getElementById('expand');
 //     var a = document.getElementById('foodRecipe');

@@ -79,6 +79,10 @@ p{
   
 }
 
+.cell {
+  margin-bottom: 50px;
+}
+
 @media (max-width: 690px) {
   .button {
     font-size: 1rem;
