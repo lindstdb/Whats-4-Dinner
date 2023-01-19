@@ -12,6 +12,7 @@ Oh, I forgot to mention. DRINKS ON US!(well.....just the recipies)
 ![screenshot](joshua/w4d.png)
 
 ## Functionality:
+![Alt text](joshua/Whats4Dinner.gif)
 1. Upon loading the app you will be presented with the following image:
 ![screenshot](joshua/homepagefunctionality.png)
 To generate your first dinner and drink combination, select the larger button in the center.
