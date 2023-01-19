@@ -1,5 +1,5 @@
 // Get the 'card-section' div
-const cardSection = document.querySelector(".card-section");
+/*const cardSection = document.querySelector(".card-section");
 
 // Check if recipe info is stored in Local Storage
 if (localStorage.getItem("recipeSource") && localStorage.getItem("recipeSourceUrl")) {
@@ -16,4 +16,15 @@ if (localStorage.getItem("recipeSource") && localStorage.getItem("recipeSourceUr
        // Assign the recipe source URL and title to the article
        article.innerHTML = `<a href="${recipeSourceUrl}">${recipeTitle}</a>`;
 });
-}
+}*/
+
+function forEachKey(callback) {
+    for (let i = 0; i < localStorage.length; i++) {
+      callback(localStorage.key(i));
+    }
+  }
+
+  for (let i = 0; i < localStorage.length; i++) {
+    console.log(localStorage.getItem(localStorage.key(i)));
+  }
+  
