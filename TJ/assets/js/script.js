@@ -18,9 +18,7 @@ window.addEventListener("load", function(){
         // Populate the drinkRecipe div with the cocktail data
         $("#card-populate2").html("<h4 class='drinkName'>" + cocktailName + "</h4><img src='" + cocktailImage + "'><a class='drinkUrl' href='" + cocktailUrl + "'>Go To Recipe</a>");
     });
-    localStorage.removeItem("recipeTitle");
-    localStorage.removeItem("recipeImage"); 
-    localStorage.removeItem("recipeSourceUrl"); 
+   
 });
 
 function favoriteItem() {
