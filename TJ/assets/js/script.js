@@ -23,14 +23,6 @@ window.addEventListener("load", function(){
     localStorage.removeItem("recipeSourceUrl"); 
 });
 
-// // Get the recipe data from local storage
-// var recipeTitle = localStorage.getItem("recipeTitle");
-// var recipeImage = localStorage.getItem("recipeImage");
-// var recipeSourceUrl = localStorage.getItem("recipeSourceUrl");
-
-// // Populate the foodRecipe div with the recipe data
-// document.getElementById("card-populate1").innerHTML = "<h4 class='recipe'>" + recipeTitle + "</h4><img src='" + recipeImage + "'><a class='recipeUrl' href='" + recipeSourceUrl + "'>Go To Recipe</a>";
-
 function favoriteItem() {
     var favorite = document.getElementById('heart');
     if (favorite.checked == true) {
