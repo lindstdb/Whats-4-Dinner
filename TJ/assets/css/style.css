@@ -85,8 +85,8 @@ h4 {
 
 .heart {
     position: absolute;
-    top: 15px;
-    right: -150px;
+    top: 5px;
+    right: -160px;
 }
 
 .heart label {
@@ -106,8 +106,8 @@ h4 {
 
 .heart2 {
     position: absolute;
-    top: 15px;
-    right: -150px;
+    top: 5px;
+    right: -160px;
 }
 
 .heart2 label {
